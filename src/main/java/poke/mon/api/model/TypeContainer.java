@@ -8,6 +8,6 @@ import lombok.ToString;
 @Setter
 @ToString
 public class TypeContainer {
-    //private int slot;
+    private int slot;
     private Type type;
 }
