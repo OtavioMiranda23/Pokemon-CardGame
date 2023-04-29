@@ -14,11 +14,10 @@ import java.util.List;
 
 public class Pokemon {
 
-//    private List<Stats> stats;
     private String name;
-    private int hp;
-    private int attack;
-    private int defense;
+    private double hp;
+    private double attack;
+    private double defense;
     private int specialAttack;
     private int specialDefense;
     private int speed;
@@ -40,14 +39,14 @@ public class Pokemon {
     @Override
     public String toString() {
         return "Pokemon{" +
-                "hp=" + hp +
-                ", attack=" + attack +
-                ", defense=" + defense +
-                ", specialAttack=" + specialAttack +
-                ", specialDefense=" + specialDefense +
-                ", speed=" + speed +
-                ", name='" + name + '\'' +
-                ", weight=" + weight +
+                ", name= '" + name + '\'' +
+                "hp= " + hp +
+                ", attack= " + attack +
+                ", defense= " + defense +
+                ", specialAttack= " + specialAttack +
+                ", specialDefense= " + specialDefense +
+                ", speed= " + speed +
+                ", weight= " + weight +
                 '}';
     }
 
