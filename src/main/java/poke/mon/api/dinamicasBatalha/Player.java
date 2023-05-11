@@ -2,12 +2,7 @@ package poke.mon.api.dinamicasBatalha;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import poke.mon.api.RegrasBatalhas.CalculoAtaque;
 import poke.mon.api.controller.Connect;
 import poke.mon.api.model.Pokemon;
 
@@ -63,15 +58,6 @@ public class Player {
         }
     }
 
-    @PostMapping("/players")
-    public ResponseEntity<Player> createPlayer(@RequestBody Player player) {
-        String name = getName();
-        Pokemon cartaEscolhida = getCartaEscolida();
-
-
-        Player novoPlayer = new Player(name, cartaEscolhida);
-        return new ResponseEntity<>(player, HttpStatus.CREATED);
-    }
 
 
 
